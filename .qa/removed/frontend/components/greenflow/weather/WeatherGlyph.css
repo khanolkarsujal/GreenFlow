@@ -1,0 +1,51 @@
+.gf-wx-glyph {
+  display: grid;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.gf-wx-glyph svg {
+  width: 54%;
+  height: 54%;
+}
+
+.gf-wx-glyph--sm {
+  width: 30px;
+  height: 30px;
+}
+
+.gf-wx-glyph--md {
+  width: 38px;
+  height: 38px;
+}
+
+.gf-wx-glyph--lg {
+  width: 64px;
+  height: 64px;
+}
+
+.gf-wx-glyph--sunny {
+  background: var(--gf-amber-soft);
+  color: var(--gf-amber);
+}
+
+.gf-wx-glyph--partly-cloudy {
+  background: var(--gf-amber-soft);
+  color: var(--gf-amber);
+}
+
+.gf-wx-glyph--cloudy {
+  background: #edf1ec;
+  color: var(--gf-muted);
+}
+
+.gf-wx-glyph--showers {
+  background: var(--gf-blue-soft);
+  color: var(--gf-blue);
+}
+
+.gf-wx-glyph--rain {
+  background: var(--gf-blue-soft);
+  color: var(--gf-blue);
+}

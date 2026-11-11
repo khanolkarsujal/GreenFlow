@@ -1,0 +1,45 @@
+.gf-shell {
+  --gf-green: #176b3a;
+  --gf-green-700: #10522c;
+  --gf-green-100: #ddebdd;
+  --gf-green-50: #eef6ec;
+  --gf-bg: #f7f9f5;
+  --gf-sidebar: #fbfcfa;
+  --gf-surface: #ffffff;
+  --gf-text: #142019;
+  --gf-muted: #5f6f64;
+  --gf-faint: #657368;
+  --gf-border: #e2e9e0;
+  --gf-amber: #9a6200;
+  --gf-amber-soft: #fbf1dd;
+  --gf-amber-border: #efdfc0;
+  --gf-blue: #2f6f8f;
+  --gf-blue-soft: #e7f1f6;
+  --gf-teal: #2c7a6b;
+  --gf-teal-soft: #e4f2ee;
+  --gf-on-green: #f2f8ef;
+  --gf-on-green-muted: #d9e7dd;
+  --gf-on-green-soft: rgba(255, 255, 255, 0.1);
+  --gf-on-green-line: rgba(255, 255, 255, 0.18);
+  --gf-lime: #b9ea9d;
+  --gf-white: #ffffff;
+  --gf-white-soft: #f2f8ef;
+  --gf-radius: 16px;
+  --gf-shadow-card: 0 1px 2px rgba(20, 32, 25, 0.04);
+  --gf-shadow-hero: 0 22px 54px rgba(23, 107, 58, 0.18);
+  --gf-error: #a2352a;
+  --gf-error-soft: #fbeceb;
+  --gf-error-border: #f0cfcb;
+}
+
+.gf-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

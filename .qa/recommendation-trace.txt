@@ -1,0 +1,35 @@
+=== Profile (demo lawn) ===
+label=Demo lawn (Austin, TX) lat=30.2672 lon=-97.7431 area=120.0 m2
+grass=fescue soil=loamy sprinkler=rotor
+rate=30.0 mm/h baseline=60 min events_per_week=3 last_watered=2026-11-02 (60 min)
+
+=== Constants actually used ===
+Kc=0.95 FC=0.25 WP=0.12 root_depth=0.15 m p=0.4 skip_fraction=0.5
+efficiency=0.6 I_max(max_application_mm)=30.0 baseline_event_mm=30.0 horizon_cap=7 d
+
+=== Observed lead-in (from your last watering to today) ===
+date        basis          depl.start     ET0       ETc    rain  eff.rain  depl.end
+(start of 2026-11-02: refill point 7.8000 mm - watering 30.0000 mm = 0.0000 mm depletion)
+2026-11-02  observed           0.0000    2.66    2.5270    0.00    0.0000    2.5270
+2026-11-03  observed           2.5270    3.42    3.2490   27.70    2.5270    3.2490
+replayed depletion entering the horizon = 3.249 mm; service initial_depletion_mm = 3.249 mm; difference = 0.00e+00 mm
+
+=== Forecast horizon, day by day ===
+day date         depl.start     ET0       ETc    rain  eff.rain  depl.end      check
+1   2026-11-04       3.2490    3.11    2.9545    0.00    0.0000    6.2035   0.00e+00
+2   2026-11-05       6.2035    3.69    3.5055    0.00    0.0000    9.7090   0.00e+00
+3   2026-11-06       9.7090    3.18    3.0210    0.00    0.0000   12.7300   0.00e+00
+
+=== Summary ===
+TAW = 19.5 mm
+RAW = 7.8 mm  (p=0.4 x TAW)
+skip threshold = 3.9 mm  (0.5 x RAW)
+horizon = 3 days  (ceil(7 / 3 per week), capped at 7)
+projected depletions = [6.2035, 9.709, 12.73]
+peak projected depletion = 12.73 mm
+depth before I_max cap = peak / efficiency = 21.2167 mm
+depth after  I_max cap = min(before, 30.0) = 21.2167 mm
+engine recommended_depth_mm = 21.2167 mm
+baseline event depth = 30.0 mm
+STATE = REDUCE   reason: The lawn is projected to need 21.2 mm, less than a normal 30.0 mm watering.
+minutes = depth / rate x 60 = 21.2167 / 30.0 x 60 = 42.4333 -> 42 min (baseline 60 min, change -18 min)

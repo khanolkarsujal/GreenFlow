@@ -1,0 +1,72 @@
+.gf-metric {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--gf-border);
+  border-radius: var(--gf-radius);
+  background: var(--gf-surface);
+  box-shadow: var(--gf-shadow-card);
+}
+
+.gf-metric__icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 11px;
+}
+
+.gf-metric__icon--rain {
+  background: var(--gf-blue-soft);
+  color: var(--gf-blue);
+}
+
+.gf-metric__icon--forecast {
+  background: var(--gf-teal-soft);
+  color: var(--gf-teal);
+}
+
+.gf-metric__icon--temperature {
+  background: var(--gf-amber-soft);
+  color: var(--gf-amber);
+}
+
+.gf-metric__icon--et0 {
+  background: var(--gf-green-100);
+  color: var(--gf-green-700);
+}
+
+.gf-metric__label {
+  margin: 16px 0 0;
+  color: var(--gf-muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.gf-metric__value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 2px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.gf-metric__value strong {
+  color: var(--gf-text);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.gf-metric__value span {
+  color: var(--gf-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.gf-metric__detail {
+  margin: 6px 0 0;
+  color: var(--gf-faint);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}

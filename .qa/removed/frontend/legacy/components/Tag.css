@@ -1,0 +1,47 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.tag svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.tag--neutral {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+}
+
+.tag--success {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.tag--estimate {
+  background: var(--state-estimate-soft);
+  color: var(--state-estimate);
+}
+
+.tag--skip {
+  background: var(--rec-skip-soft);
+  color: var(--rec-skip);
+}
+
+.tag--reduce {
+  background: var(--rec-reduce-soft);
+  color: var(--rec-reduce);
+}
+
+.tag--water {
+  background: var(--rec-water-soft);
+  color: var(--rec-water);
+}

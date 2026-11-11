@@ -1,0 +1,139 @@
+.gf-chart {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.gf-chart--rainfall {
+  height: 260px;
+}
+
+.gf-chart--temperature {
+  height: 220px;
+}
+
+.gf-chart--et0 {
+  height: 210px;
+}
+
+.gf-chart--trends {
+  height: 300px;
+}
+
+.gf-chart .recharts-wrapper {
+  font-family: inherit;
+}
+
+.gf-chart .recharts-surface:focus {
+  outline: 2px solid var(--gf-green);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.gf-chart .recharts-tooltip-wrapper {
+  z-index: 3;
+}
+
+.gf-chart-tip {
+  min-width: 170px;
+  padding: 11px 13px;
+  border: 1px solid var(--gf-border);
+  border-radius: 12px;
+  background: var(--gf-surface);
+  box-shadow: 0 14px 34px rgba(20, 32, 25, 0.13);
+}
+
+.gf-chart-tip__title {
+  margin: 0;
+  color: var(--gf-text);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.gf-chart-tip__subtitle {
+  margin: 2px 0 8px;
+  color: var(--gf-faint);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.gf-chart-tip__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gf-chart-tip__row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.gf-chart-tip__dot {
+  width: 7px;
+  height: 7px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--gf-muted);
+}
+
+.gf-chart-tip__dot[data-tone="green"] {
+  background: #176b3a;
+}
+
+.gf-chart-tip__dot[data-tone="teal"] {
+  background: #2c7a6b;
+}
+
+.gf-chart-tip__dot[data-tone="amber"] {
+  background: #9a6200;
+}
+
+.gf-chart-tip__dot[data-tone="blue"] {
+  background: #2f6f8f;
+}
+
+.gf-chart-tip__label {
+  color: var(--gf-muted);
+}
+
+.gf-chart-tip__value {
+  margin-left: auto;
+  color: var(--gf-text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 600px) {
+  .gf-chart--rainfall {
+    height: 230px;
+  }
+
+  .gf-chart--temperature {
+    height: 200px;
+  }
+
+  .gf-chart--et0 {
+    height: 190px;
+  }
+
+  .gf-chart--trends {
+    height: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gf-chart * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

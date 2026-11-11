@@ -1,0 +1,176 @@
+.gf-bt {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gf-bt .gf-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gf-bt-tag {
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--gf-teal);
+  border-radius: 8px;
+  background: var(--gf-green-50);
+  color: var(--gf-text);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.gf-bt-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--gf-muted);
+  font-size: 0.8rem;
+}
+
+.gf-bt-error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--gf-text);
+  font-size: 0.8rem;
+}
+
+.gf-bt-error p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.gf-bt-figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.gf-bt-figure strong {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--gf-green-700);
+}
+
+.gf-bt-figure span {
+  color: var(--gf-muted);
+  font-size: 0.78rem;
+}
+
+.gf-bt-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.gf-bt-stats div {
+  padding: 10px 12px;
+  border: 1px solid #e4eee0;
+  border-radius: 10px;
+  background: var(--gf-white);
+}
+
+.gf-bt-stats dt {
+  color: var(--gf-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.gf-bt-stats dd {
+  margin: 4px 0 0;
+  color: var(--gf-text);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.gf-bt-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16px, 1fr));
+  gap: 4px;
+}
+
+.gf-bt-day {
+  display: block;
+  height: 18px;
+  border-radius: 4px;
+  background: #e8efe4;
+}
+
+.gf-bt-day--dry {
+  background: #eef3ea;
+}
+
+.gf-bt-day--skip {
+  background: var(--gf-blue);
+}
+
+.gf-bt-day--reduce {
+  background: var(--gf-amber);
+}
+
+.gf-bt-day--water {
+  background: var(--gf-green);
+}
+
+.gf-bt-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gf-bt-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gf-muted);
+  font-size: 0.72rem;
+}
+
+.gf-bt-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.gf-bt-swatch--dry {
+  background: #eef3ea;
+}
+
+.gf-bt-swatch--skip {
+  background: var(--gf-blue);
+}
+
+.gf-bt-swatch--reduce {
+  background: var(--gf-amber);
+}
+
+.gf-bt-swatch--water {
+  background: var(--gf-green);
+}
+
+.gf-bt-footnote {
+  margin: 0;
+  color: var(--gf-muted);
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .gf-bt-figure strong {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,132 @@
+.recommendation-card__state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.recommendation-card__state--skip {
+  background: var(--rec-skip-soft);
+  color: var(--rec-skip);
+}
+
+.recommendation-card__state--reduce {
+  background: var(--rec-reduce-soft);
+  color: var(--rec-reduce);
+}
+
+.recommendation-card__state--water {
+  background: var(--rec-water-soft);
+  color: var(--rec-water);
+}
+
+.recommendation-card__reason {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  .recommendation-card__reason {
+    font-size: 1.75rem;
+  }
+}
+
+.recommendation-card__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent-strong);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.recommendation-card__toggle:hover {
+  text-decoration: underline;
+}
+
+.recommendation-card__toggle:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.recommendation-card__why {
+  margin-top: 16px;
+}
+
+.recommendation-card__action {
+  margin-top: 20px;
+}
+
+.recommendation-card__action .button {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .recommendation-card__action .button {
+    width: auto;
+  }
+}
+
+.why-details__list {
+  display: grid;
+}
+
+.why-details__row {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.why-details__row:first-child {
+  padding-top: 0;
+}
+
+.why-details__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.why-details__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.why-details__label {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.why-details__value {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.why-details__description {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.why-details__note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
